@@ -73,7 +73,7 @@ describe('Testing resource routes', () => {
         .expect(200)
         .expect('Content-Type', /json/);
   });
-  test('expect status code 204 on PUT to /todo', () => {
+  test('expect status code 200 on PUT to /todo', () => {
     const body = {
       text: 'fizz',
       difficulty: 1,
@@ -85,7 +85,7 @@ describe('Testing resource routes', () => {
         .put('/todo/1')
         .auth(token, {type: 'bearer'})
         .send(body)
-        .expect(204)
+        .expect(200)
         .expect('Content-Type', /json/);
   });
 

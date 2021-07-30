@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jest --watch --verbose",
+    "lint": "eslint ./lib/**/*.js index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CullenSharp/Todo-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Cullen Sharp",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CullenSharp/Todo-api/issues"
